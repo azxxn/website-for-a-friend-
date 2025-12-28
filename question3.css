@@ -1,0 +1,37 @@
+/* Question page styles */
+.question {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* Answer buttons */
+.answer-btn {
+    min-width: 120px; /* symmetric size */
+    padding: 12px 0;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff85b3, #ff5d9e);
+    color: #fff;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.answer-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 93, 158, 0.4);
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 414px) {
+    .question {
+        font-size: 1.5rem;
+    }
+
+    .answer-btn {
+        min-width: 100px;
+        font-size: 0.95rem;
+        padding: 10px 0;
+    }
+}
